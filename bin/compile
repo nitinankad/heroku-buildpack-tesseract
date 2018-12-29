@@ -14,4 +14,4 @@ tar -zxvf tessdata.tar.gz -C $BUILD_DIR/vendor/share
 echo "Building runtime environment"
 mkdir -p $BUILD_DIR/.profile.d
 PROFILE_D=$BUILD_DIR/.profile.d/tesseract.sh
-echo "export TESSDATA_PREFIX=\"\$HOME/vendor/share/\";" >> $PROFILE_D
+echo "export TESSDATA_PREFIX=\"\$HOME/.apt/usr/share/tesseract-ocr/4.00/tessdata/\";" >> $PROFILE_D
